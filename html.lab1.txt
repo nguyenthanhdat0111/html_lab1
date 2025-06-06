@@ -3,81 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic HTML5 Lab</title>
+    <style>
+        #header, #main, #footer {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the HTML5 Lab</h1>
+
+    <!-- Header -->
+    <div id="header">
+        <h1>Welcome to the HTML5 Lab</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main">
+
+        <!-- Task 2: Lists -->
+        <h2>Programming Languages</h2>
+        <ol>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+        </ol>
+
+        <h2>Web Browsers</h2>
+        <ul>
+            <li>Chrome</li>
+            <li>Firefox</li>
+            <li>Edge</li>
+        </ul>
+
+        <!-- Task 3: Table -->
+        <h2>Student Information</h2>
+        <table border="1">
+            <tr>
+                <th>No</th>
+                <th>Full Name</th>
+                <th>Class</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyen Van A</td>
+                <td>CS20</td>
+                <td>a@example.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tran Thi B</td>
+                <td>CS20</td>
+                <td>b@example.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Le Van C</td>
+                <td>CS20</td>
+                <td>c@example.com</td>
+            </tr>
+        </table>
+
+        <!-- Task 4: Span -->
+        <p>This lab teaches basic <span style="color:red;">HTML5</span> elements and how to create a <span style="color:blue;">form</span>.</p>
+
+        <!-- Task 5: Image and Link -->
+        <h2>HTML5 Logo</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo" width="100">
+        <p>Learn more at <a href="https://www.w3schools.com" target="_blank">W3Schools</a>.</p>
+
+        <!-- Task 6: Form -->
+        <h2>Student Registration Form</h2>
+        <form>
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Password:</label><br>
+            <input type="password" name="password"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female<br><br>
+
+            <label>Hobbies:</label><br>
+            <input type="checkbox" name="hobby" value="coding"> Coding
+            <input type="checkbox" name="hobby" value="design"> Design
+            <input type="checkbox" name="hobby" value="gaming"> Gaming<br><br>
+
+            <label>Notes:</label><br>
+            <textarea name="notes"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>Footer content here</p>
+    </div>
+
 </body>
 </html>
-<ol>
-    <li>Python</li>
-    <li>JavaScript</li>
-    <li>C++</li>
-</ol>
-<ul>
-    <li>Chrome</li>
-    <li>Firefox</li>
-    <li>Edge</li>
-</ul>
-<table border="1">
-    <tr>
-        <th>No</th>
-        <th>Full Name</th>
-        <th>Class</th>
-        <th>Email</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Nguyen Van A</td>
-        <td>CS20</td>
-        <td>a@example.com</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Tran Thi B</td>
-        <td>CS20</td>
-        <td>b@example.com</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Le Van C</td>
-        <td>CS20</td>
-        <td>c@example.com</td>
-    </tr>
-</table>
-<div id="header">
-    <h2>Header</h2>
-</div>
-
-<div id="main">
-    <p>This is the <span style="color:red;">HTML5</span> main content about <span style="color:blue;">form</span> usage.</p>
-</div>
-
-<div id="footer">
-    <p>Footer</p>
-</div>
-<img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5 Logo" width="100">
-<p>Visit <a href="https://www.w3schools.com" target="_blank">W3Schools</a> for more information.</p>
-<form>
-    <label>Full Name:</label><br>
-    <input type="text" name="fullname"><br><br>
-
-    <label>Email:</label><br>
-    <input type="email" name="email"><br><br>
-
-    <label>Password:</label><br>
-    <input type="password" name="password"><br><br>
-
-    <label>Gender:</label><br>
-    <input type="radio" name="gender" value="male"> Male
-    <input type="radio" name="gender" value="female"> Female<br><br>
-
-    <label>Hobbies:</label><br>
-    <input type="checkbox" name="hobby" value="coding"> Coding
-    <input type="checkbox" name="hobby" value="design"> Design
-    <input type="checkbox" name="hobby" value="gaming"> Gaming<br><br>
-
-    <label>Notes:</label><br>
-    <textarea name="notes"></textarea><br><br>
-
-    <input type="submit" value="Submit">
-</form>
